@@ -1,0 +1,23 @@
+v3.0 hex words addressed
+# MIPS data RAM for Logisim
+# Sun Nov 26 09:41:03 GMT-05:00 2023
+# 4 entries for data segment in symbol table
+# segment address symbol source
+#  data  0x00000000     numvals  [line 3]
+#  data  0x00000004        vals  [line 5]
+#  data  0x00000024        msg1  [line 15]
+#  data  0x0000002f        msg2  [line 17]
+00000000: 00 00 00 06  # . . . .
+00000004: 00 00 00 63  # . . . c
+00000008: 00 00 00 0f  # . . . .
+0000000c: 00 0f f1 ce  # . . . .
+00000010: ff ff ff fb  # . . . .
+00000014: 00 00 00 23  # . . . #
+00000018: 8b ad f0 0d  # . . . .
+0000001c: 00 00 00 03  # . . . .
+00000020: 00 00 00 04  # . . . .
+00000024: 53 6f 72 74  # S o r t
+00000028: 69 6e 67 2e  # i n g .
+0000002c: 2e 2e 00 44  # . . . D
+00000030: 6f 6e 65 21  # o n e !
+00000034: 0a 00        # . .

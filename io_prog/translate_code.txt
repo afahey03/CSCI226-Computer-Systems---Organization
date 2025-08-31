@@ -1,0 +1,14 @@
+v3.0 hex words addressed
+# MIPS code ROM for Logisim
+# Mon Nov 20 21:43:26 GMT-05:00 2023
+# 1 entries for text segment in symbol table
+# segment address symbol source
+#  text  0x00000004     waitloop  [line 4]
+00000000: 3c 08 80 00  # lui $8, -32768
+00000004: 81 09 00 00  # lb $9, 0($8)
+00000008: 11 20 ff fe  # beq $9, $0, -2 # -8 bytes
+0000000c: 81 0a 00 04  # lb $10, 4($8)
+00000010: 25 4a ff d0  # addiu $10, $10, -48
+00000014: 25 4a 00 61  # addiu $10, $10, 97
+00000018: 81 0a 00 10  # lb $10, 16($8)
+0000001c: 08 00 00 01  # j 0x00000004

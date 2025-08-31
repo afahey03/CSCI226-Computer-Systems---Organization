@@ -1,0 +1,10 @@
+v3.0 hex words addressed
+# Above line is needed by logisim, below is MIPS machine code and comments
+00000: 24 0f b9 b1  # addiu r15, r0, -17999  // put constant -17999 (decimal) into r15
+00004: 01 e0 38 21  # addu r7, r15, r0       // copy that same value to r7
+00008: 00 00 10 21  # addu r2, r0, r0        // set r2 to zero
+0000c: 30 e6 00 01  # andi r6, r7, 0x0001    // bitwise AND r7 with a constant, put result in r6
+00010: 00 46 10 21  # addu r2, r2, r6        // compute r2+r6, put result in r2
+00014: 00 07 38 42  # srl r7, r7, 1          // shift r7 right by one bit, put result in r7
+00018: 08 00 00 03  # j c                    // jump to c
+# 000010 00000000000000000000000011

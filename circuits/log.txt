@@ -1,0 +1,27 @@
+ProjectName:       circuits
+Deadline:          21:00 1/28/2020
+project0.circ submitted: 2023-09-11 07:45:52
+  Testing project0.circ ... 
+*  Submitted circuits in project0.circ:
+   - bardeen
+   - shockley
+   - onehot
+   - parity
+   - election
+   - railroad
+   - decoder0
+   - counter
+   - decoder1
+   - display
+*  Testing bardeen with various possible inputs
+*  Testing shockley with various possible inputs
+*  Testing onehot with various possible inputs
+*  Testing parity with various possible inputs
+*  Testing election with various possible inputs
+*  Testing railroad with various possible inputs
+*  Testing decoder0 with various possible inputs
+*  Testing counter with various possible inputs
+*  Testing decoder1 with various possible inputs
+*  Testing display with various possible inputs
+
+* 1 of 1 programs compiled and tested

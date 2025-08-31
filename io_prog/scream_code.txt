@@ -1,0 +1,22 @@
+v3.0 hex words addressed
+# MIPS code ROM for Logisim
+# Mon Nov 20 21:43:26 GMT-05:00 2023
+# 3 entries for text segment in symbol table
+# segment address symbol source
+#  text  0x00000018        main  [line 9]
+#  text  0x0000001c        loop  [line 12]
+#  text  0x00000030        exit  [line 18]
+00000000: 3c 02 80 00  # lui $2, -32768
+00000004: 34 03 00 0f  # ori $3, $0, 15
+00000008: 34 04 00 40  # ori $4, $0, 64
+0000000c: 34 05 00 61  # ori $5, $0, 97
+00000010: 34 06 00 21  # ori $6, $0, 33
+00000014: 34 07 00 20  # ori $7, $0, 32
+00000018: a0 44 00 10  # sb $4, 16($2)
+0000001c: 00 43 08 23  # subu $1, $2, $3
+00000020: 1c 20 00 03  # bgtz $1, 3 # 12 bytes
+00000024: a0 45 00 10  # sb $5, 16($2)
+00000028: 24 02 00 01  # addiu $2, $0, 1
+0000002c: 08 00 00 07  # j 0x0000001c
+00000030: a0 46 00 10  # sb $6, 16($2)
+00000034: a0 47 00 10  # sb $7, 16($2)

@@ -1,0 +1,16 @@
+v3.0 hex words addressed
+000000: 34 04 00 20 # ori r4, r0, 0x0020    0011 0100 0000 0100 
+000004: 34 05 00 50 # ori r5, r0, 0x0050    0011 0100 0000 0101
+000008: 34 06 00 05 # ori r6, r0, 5
+00000c: 00 00 50 21 # addu r10, r0, r0      0000 0000 0000 0000 0101 0000 0010 0001
+
+#000010: 8c ab 00 05 # lw r11, 0(r5)  // bne, below, lands here: this is the first instruction to be repeated 1000 1100 1010 1011 
+000010: 8c ab 00 00 # lw r11, 0(r5)  // bne, below, lands here: this is the first instruction to be repeated 1000 1100 1010 1011 
+# Note: kwalsh changed immediate from 0005 to 0000
+
+000014: 01 4b 50 21 # addu r10, r10, r11    0000 0001 0100 1011 0101 0000 0010 0001
+000018: ac 8b 00 00 # sw r11, 0(r4)         1010 1100 1000 1011 
+00001c: 24 84 00 04 # addiu r4, r4, 4       001001 00100 00100 
+000020: 24 a3 00 04 # addiu r5, r5, 4       001001 00101 00101 
+000024: 24 c6 ff ff # addiu r6, r6, -1      0010 0100 1100 0110
+000028: 14 c0 ff f9 # bne r6, r0, -7  // this should (sometimes) skip back to repeat the last 7 instructions 0001 0100 1100 0000
