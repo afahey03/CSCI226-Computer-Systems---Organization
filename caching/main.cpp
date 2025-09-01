@@ -61,7 +61,7 @@ void checkCache(int address) { // does everything
         cout << "Biff! Tag " << tag << " Offset: " << offset << "\n";
         missCount++;
         int replaceIndex = LFAIndex();
-        replace(LFAIndex(), tag);
+        replace(replaceIndex, tag);
     }
 }
 
